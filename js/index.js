@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
       time:form.time.value,
     }
 
+    //envia pro banco os dados de cada receita
     let transaction = db.transaction([storeName], 'readwrite');
     let objectStore = transaction.objectStore(storeName);
     let request = objectStore.add(recipe);
