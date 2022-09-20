@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link type="text/css"  rel="stylesheet" href="css/materialize.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/manifest.json">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="#FFE1C4">
+    <title>Receitas-PWA</title>
+</head>
+<body class="grey lighten-4">
+
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Receitas-PWA</a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+      <!-- utilizado o data-target para referenciar e criar a navegação do sidemenu -->
+    <ul id="side-menu" class="sidenav side-menu" >
+        <li><a class="subheader">Navegue no nosso Site</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="html/about.html" class="waves-effect">Sobre</a></li>
+    </ul>  
+
+    <div class="recipes container grey-text text-darken-1" id="recipe-list">
+
+    </div>
+ 
+    
+      <div class="center">
+        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
+      <!-- utilizado o data-target para referenciar e criar a navegação o formulario para adicionar uma nova receita -->
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-recipe container section">
+          <h6 >Nova Receita</h6>
+          <div class="divider"></div>
+          <div class="input-field">
+            <input placeholder="Maionese" id="title" type="text" class="validate" required>
+            <label for="title">Titulo da Receita</label>
+          </div>
+          <div class="input-field">
+            <input placeholder="Ovos, Maçã, Maionese" id="ingredients" type="text" class="validate" required>
+            <label for="ingredients">Ingredientes</label>
+          </div>
+          <div class="input-field">
+            <input type="time"  id="time" class="validate" required>
+            <label for="time">Tempo de preparo</label>
+          </div>
+          <div class="input-field center">
+            <button class="btn-small">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
