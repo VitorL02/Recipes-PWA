@@ -151,7 +151,7 @@ const cleanList = () => {
   const renderRecipe = (title,ingredients,time,id) => {
       const html = `
       <div class="card-panel recipe white row" >
-        <img src="/assets/icon.png" class="thumb" alt="thumb">
+        <img src="assets/icon.png" class="thumb" alt="thumb">
         <div class="recipe-details">
           <div class="recipe-title">${title}</div>
           <div class="recipe-ingredients">${ingredients}</div>
